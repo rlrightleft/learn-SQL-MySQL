@@ -1,11 +1,13 @@
 # 📊 SQL Zoo Solutions
 
-*My solutions to and reflections from [SQLZoo](https://sqlzoo.net) exercises (MySQL dialect).*
+*My solutions to [SQLZoo](https://sqlzoo.net) exercises (MySQL dialect).*
 
 ---
 
 ## 📝 About This Repository
-This repository contains my solutions and personal reflections on various **exercises and quizzes** from SQLZoo. It’s meant as a learning resource and a way to practice SQL concepts hands-on. Solutions include explanations to help reinforce my understanding of SQL queries, joins, subqueries, and more.
+My solutions to **SQLZoo exercises and quizzes**, designed as a hands-on learning resource to practice SQL concepts.
+
+All solutions were 100% correct at the time of upload and include explanations to reinforce key SQL topics like queries, joins, subqueries, and more.
 
 **SQL Dialect:** MySQL
 
