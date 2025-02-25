@@ -1,15 +1,15 @@
-# 📊 SQL Zoo Solutions
+# SQL Zoo Solutions
 
 *My solutions to [SQLZoo](https://sqlzoo.net) exercises (MySQL dialect).*
 
 ---
 
-## 📝 About This Repository
+## About This Repository
+**SQL Dialect:** MySQL
+
 My solutions to **SQLZoo exercises and quizzes**, designed as a hands-on learning resource to practice SQL concepts.
 
-All solutions were 100% correct at the time of upload and include explanations to reinforce key SQL topics like queries, joins, subqueries, and more.
-
-**SQL Dialect:** MySQL
+All solutions are 💯 correct at the time of upload and include explanations to reinforce key SQL topics like queries, joins, subqueries, and more.
 
 ---
 
@@ -87,4 +87,4 @@ If you notice any errors or have suggestions, feel free to open an issue.
 
 ---
 
-Happy querying! 🚀
+Happy querying! 🚀😄
