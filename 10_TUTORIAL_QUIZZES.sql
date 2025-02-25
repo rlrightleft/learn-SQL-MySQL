@@ -22,9 +22,9 @@ BETWEEN is inclusive, so it captures countries with populations between 1,000,00
 */
   
 -- Question 2: Pick the result you would obtain from this code:
-      SELECT name, population
-      FROM world
-      WHERE name LIKE "Al%";    
+    SELECT name, population
+    FROM world
+    WHERE name LIKE "Al%";    
 
 -- Albania   | 3200000
 -- Algeria   | 32900000
