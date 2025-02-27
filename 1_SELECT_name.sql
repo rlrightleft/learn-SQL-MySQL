@@ -10,7 +10,7 @@ FROM world
 WHERE name LIKE 'Y%';
 
 /* Reflection:
-The LIKE operator with 'Y%' matches any country name that starts with 'Y' Use % as a wild-card to match any number of any characters.
+The LIKE operator with 'Y%' matches any country name that starts with 'Y'. Use % as a wild-card to match any number of any characters.
 */
 
 -- Problem 2: Find the countries that end with y
@@ -43,7 +43,7 @@ WHERE name LIKE 'C%'
   AND name LIKE '%ia';
 
 /* Reflection:
-Combining LIKE conditions with AND allows filtering names by both prefixes and suffixes.
+Combining **LIKE** conditions with **AND** allows filtering names by both prefixes and suffixes.
 */
 
 -- Problem 6: Greece has a double e - who has a double o? Find the country that has oo in the name
@@ -99,7 +99,7 @@ FROM world
 WHERE capital = CONCAT(name,' City');
 
 /* Reflection:
-The CONCAT function appends ' City' to the country name, ensuring an exact match. Use CONCAT to combine multiple strings.
+The **CONCAT** function appends ' City' to the country name, ensuring an exact match. Use CONCAT to combine multiple strings.
 */
 
 -- Problem 13: Find the capital and the name where the capital includes the name of the country.
