@@ -73,7 +73,7 @@ SQLZoo is a hands-on platform for practicing SQL in bite-sized lessons. I chose 
    git clone https://github.com/rlrightleft/SQL_Zoo_solutions.git
    ```
 2. Explore SQL files by topic, including both **tutorial exercises** and **quiz solutions** (located in **File 10: Tutorial Quizzes**).
-3. Review in-line comments and reflections within each `.sql` file. Reflections are included as comments right after each solution to explain my thought process and key takeaways.
+3. Review comments and reflections within each `.sql` file. Reflections are included as comments right after each solution to explain my thought process and key takeaways.
 
 ---
 
