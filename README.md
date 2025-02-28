@@ -63,7 +63,7 @@ SQL_Zoo_solutions/
 ---
 
 ## 💡 Why SQLZoo?
-SQLZoo is a hands-on platform for practicing SQL in bite-sized lessons. I chose SQLZoo because of its progressive difficulty and the variety of real-world examples it offers.
+[SQLZoo](https://sqlzoo.net) is a hands-on platform for practicing SQL in bite-sized lessons. I chose SQLZoo because of its progressive difficulty and the variety of real-world examples it offers.
 
 ---
 
