@@ -14,6 +14,10 @@ WHERE population >
     WHERE name = 'Russia'
   );
 
+/* Reflection:
+Use a subquery (the subquery in this example is in parentheses) to compare against a specific value retrieved dynamically.
+*/
+
 -- Problem 2: Show the countries in Europe with a per capita GDP greater than 'United Kingdom'.
 -- Per Capita GDP: The per capita GDP is the gdp/population
 SELECT name
@@ -53,6 +57,10 @@ AND population <
   WHERE name = 'Germany'
   );
 
+/* Reflection:
+Using two subqueries ensures the population falls within a defined range.
+*/
+
 -- Problem 5: Germany (population roughly 80 million) has the largest population of the countries in Europe. Austria (population 8.5 million) has 11% of the population of Germany. Show the name and the population of each country in Europe. Show the population as a percentage of the population of Germany.
 --| Name      | Percentage |
 --|-----------|-----------|
@@ -75,6 +83,10 @@ SELECT name,
 FROM world
 WHERE continent = 'Europe';
 
+/* Reflection:
+Percentages are calculated by multiplying by 100 and rounding to avoid decimals.
+*/
+
 -- Problem 6: Which countries have a GDP greater than every country in Europe? [Give the name only.] (Some countries may have NULL gdp values)
 SELECT name
 FROM world
@@ -85,6 +97,10 @@ WHERE gdp >
     WHERE continent = 'Europe'
     AND gdp > 0
   );
+
+/* Reflection:
+The **ALL** operator ensures GDP is compared against all European countries in the subqueried list.
+*/
 
 -- Problem 7: Find the largest country (by area) in each continent, show the continent, the name and the area:
 -- The above example is known as a correlated or synchronized sub-query.
@@ -100,6 +116,10 @@ WHERE area >=
     WHERE y.continent = x.continent
     AND area > 0);
 
+/* Reflection:
+This **correlated subquery** allows checking the largest country **per continent** dynamically.
+*/
+
 -- Problem 8: List each continent and the name of the country that comes first alphabetically.
 SELECT continent, name
 FROM world x
@@ -109,6 +129,10 @@ WHERE name <=
     FROM world y
     WHERE y.continent = x.continent
   );
+
+/* Reflection:
+The **ALL** operator combined with <= helps to select the country that appears first alphabetically per continent.
+*/
 
 -- Problem 9: Find the continents where all countries have a population <= 25000000. Then find the names of the countries associated with these continents. Show name, continent and population.
 SELECT name, continent, population
@@ -120,6 +144,10 @@ WHERE 25000000 >=
     WHERE y.continent = x.continent
   );
 
+/* Reflection:
+Ensuring **ALL** countries in the continent meet the condition filters for small-population continents.
+*/
+
 -- Problem 10: Some countries have populations more than three times that of all of their neighbours (in the same continent). Give the countries and continents.
 SELECT name, continent
 FROM world x
@@ -130,3 +158,8 @@ WHERE population >
     WHERE y.continent = x.continent
     AND y.name != x.name
   );
+
+/* Reflection:
+Using **ALL** ensures that the country’s population is three times larger than every other country in its continent.
+Remember to exclude self comparison - y.name != x.name
+*/
