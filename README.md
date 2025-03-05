@@ -1,6 +1,6 @@
 # SQL Zoo Solutions
 
-*My solutions to [SQLZoo](https://sqlzoo.net) exercises (MySQL dialect).*
+*My solutions to [SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) exercises (MySQL dialect).*
 
 ---
 
@@ -63,7 +63,7 @@ SQL_Zoo_solutions/
 ---
 
 ## 💡 Why SQLZoo?
-[SQLZoo](https://sqlzoo.net) is a hands-on platform for practicing SQL in bite-sized lessons. I chose SQLZoo because of its progressive difficulty and the variety of real-world examples it offers.
+[SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) is a hands-on platform for practicing SQL in bite-sized lessons. I chose SQLZoo because of its progressive difficulty and the variety of real-world examples it offers.
 
 ---
 
