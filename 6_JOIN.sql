@@ -118,10 +118,14 @@ FROM game LEFT JOIN goal ON game.id = goal.matchid
 GROUP BY mdate, matchid, team1, team2;
 
 /* Reflection:
-The **CASE WHEN** statement is used to conditionally assign values in SQL. Here, it differentiates between goals scored by team1 and team2. 
+Here, **LEFT JOIN** is used instead of **JOIN** to ensure that matches with no goals (0-0 games) are still included in the results. 
+Using **INNER JOIN** (aka JOIN) would exclude such matches.
+
+The **CASE WHEN** statement is used to conditionally assign values in SQL. 
+Here, it differentiates between goals scored by team1 and team2. 
 The **SUM()** function is then used to count goals per team.
-CASE allows you to return different values under different conditions.
-If there no conditions match (and there is not ELSE) then NULL is returned.
+
+CASE allows you to return different values under different conditions. If no conditions match (and there is no ELSE), then NULL is returned.
   CASE WHEN condition1 THEN value1 
        WHEN condition2 THEN value2  
        ELSE def_value 
