@@ -25,6 +25,11 @@ SELECT player, teamid, stadium, mdate
 FROM game JOIN goal ON (id=matchid)
 WHERE teamid = 'GER';
 
+/* Reflection:
+The **JOIN** keyword merges rows from multiple tables based on a common column.
+Here, we use `game.id = goal.matchid` to connect goals to matches.
+*/
+
 -- Problem 4: Use the same JOIN as in the previous question. Show the team1, team2 and player for every goal scored by a player called Mario player LIKE 'Mario%'
 SELECT team1, team2, player
 FROM game JOIN goal ON (game.id = goal.matchid)
@@ -55,6 +60,11 @@ WHERE teamid != 'GER'
 AND (team1 = 'GER'
   OR team2 = 'GER');
 
+/* Reflection:
+Using `teamid != 'GER'` ensures that we exclude German players from the results.
+**DISTINCT** prevents duplicate player names from appearing.
+*/
+
 -- Problem 9: Show teamname and the total number of goals scored.
 -- COUNT and GROUP BY: You should COUNT(*) in the SELECT line and GROUP BY teamname
 SELECT teamname, COUNT(*)
@@ -65,6 +75,11 @@ GROUP BY teamname;
 SELECT stadium, COUNT(gtime)
 FROM game JOIN goal ON game.id = goal.matchid
 GROUP BY stadium;
+
+/* Reflection:
+COUNT(*) counts the total number of rows for each grouped category.
+GROUP BY groups the results based on a column (e.g., teamname or stadium).
+*/
 
 -- Problem 11: For every match involving 'POL', show the matchid, date and the number of goals scored.
 SELECT matchid, mdate, COUNT(gtime)
@@ -101,3 +116,14 @@ SELECT
     END) AS score2
 FROM game LEFT JOIN goal ON game.id = goal.matchid
 GROUP BY mdate, matchid, team1, team2;
+
+/* Reflection:
+The **CASE WHEN** statement is used to conditionally assign values in SQL. Here, it differentiates between goals scored by team1 and team2. 
+The **SUM()** function is then used to count goals per team.
+CASE allows you to return different values under different conditions.
+If there no conditions match (and there is not ELSE) then NULL is returned.
+  CASE WHEN condition1 THEN value1 
+       WHEN condition2 THEN value2  
+       ELSE def_value 
+  END column_name
+*/
