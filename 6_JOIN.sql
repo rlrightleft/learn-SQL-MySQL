@@ -131,3 +131,70 @@ CASE allows you to return different values under different conditions. If no con
        ELSE def_value 
   END column_name
 */
+
+
+-- Old JOIN Tutorial
+-- The Table Tennis Olympics Database:
+-- The table ttms shows the Olympic medal winners for Table Tennis (Men's Singles). The country of each winner is given by a three letter code. To get the actual country name you must JOIN this table to the country table.
+-- The two tables country and ttms are ONE TO MANY. One country has many winners, each winner has only one country.
+
+-- Old Problem 1: Show the athelete (who) and the country name for medal winners in 2000.
+-- ttms(games,color,who,country)
+-- country(id,name)
+SELECT who, country.name
+FROM ttms JOIN country ON (ttms.country=country.id)
+WHERE games = 2000;
+
+-- Old Problem 2: Show the who and the color of the medal for the medal winners from 'Sweden'.
+SELECT who, color
+FROM ttms JOIN country ON (ttms.country = country.id)
+WHERE name = 'Sweden';
+
+-- Old Problem 3: Show the years in which 'China' won a 'gold' medal.
+SELECT games
+FROM ttms JOIN country ON (ttms.country = country.id)
+WHERE name = 'China'
+AND color = 'gold';
+
+
+-- Women's Singles Table Tennis Olympics Database:
+-- The Summer Olympic games are held every four years in a different city. The table games shows which city the games were held in. The Women's Single's winners are in the table ttws.
+
+-- Old Problem 4: Show who won medals in the 'Barcelona' games.
+-- ttws(games,color,who,country)
+-- games(yr,city,country)
+SELECT who
+FROM ttws JOIN games ON (ttws.games = games.yr)
+WHERE city = 'Barcelona';
+
+-- Old Problem 5: Show which city 'Jing Chen' won medals. Show the city and the medal color.
+SELECT city, color
+FROM ttws JOIN games ON (ttws.games = games.yr)
+WHERE who = 'Jing Chen';
+
+-- Old Problem 6: Show who won the gold medal and the city
+SELECT who, city
+FROM ttws JOIN games ON (ttws.games = games.yr)
+WHERE color = 'gold';
+
+
+-- Table Tennis Mens Doubles:
+-- The Table Tennis Mens Double teams are stored in the table team. Each team has an arbitrary number that is referenced from the table ttmd.
+
+-- Old Problem 7: Show the games and color of the medal won by the team that includes 'Yan Sen'.
+-- ttmd(games,color,team,country)
+-- team(id,name) 
+SELECT games, color
+FROM ttmd JOIN team ON (ttmd.team = team.id)
+WHERE name = 'Yan Sen';
+
+-- Old Problem 8: Show the 'gold' medal winners in 2004.
+SELECT name
+FROM ttmd JOIN team ON (ttmd.team = team.id)
+WHERE color = 'gold'
+AND games = 2004;
+
+-- Old Problem 9: Show the name of each medal winner country 'FRA'.
+SELECT name
+FROM ttmd JOIN team ON (ttmd.team = team.id)
+WHERE country = 'FRA';
