@@ -4,10 +4,10 @@
 
 ---
 
-## About This Repository
+## About This Repo
 **SQL Dialect:** MySQL
 
-My solutions to **SQLZoo exercises and quizzes**, designed as a hands-on learning resource to practice SQL concepts.
+My solutions to **all SQLZoo exercises and quizzes**, designed as a hands-on learning resource to practice SQL concepts.
 
 All solutions are 💯 correct at the time of upload and include explanations to reinforce key SQL topics like queries, joins, subqueries, and more.
 
@@ -35,6 +35,8 @@ All solutions are 💯 correct at the time of upload and include explanations to
 
 ## Why SQLZoo?
 [SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) is a hands-on platform for practicing SQL in bite-sized lessons. I chose SQLZoo because of its progressive difficulty and the variety of real-world examples it offers.
+
+Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
 
 ---
 
