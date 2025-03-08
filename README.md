@@ -5,11 +5,11 @@
 ---
 
 ## About This Repo
+**SQL Dialect:** MySQL
+
 My solutions to **all SQLZoo exercises and quizzes**, designed as a hands-on learning resource to practice SQL concepts.
 
 All solutions are 💯 correct at the time of upload and include explanations to reinforce key SQL topics like queries, joins, subqueries, and more.
-
-**SQL Dialect:** MySQL
 
 ---
 
