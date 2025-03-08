@@ -1,6 +1,6 @@
 # SQL Zoo Solutions
 
-*My solutions to [SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) exercises (MySQL dialect).*
+*My solutions to all [SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) exercises and quizzes (MySQL dialect).*
 
 ---
 
