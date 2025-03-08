@@ -27,34 +27,9 @@ All solutions are 💯 correct at the time of upload and include explanations to
 - 9 Window Function
 - 9+ COVID 19
 - 9 Self Join
-- 10 **Tutorial Quizzes** *(Multiple-choice quizzes and solutions)*
+- 10 **Tutorial Quizzes**      *(Multiple-choice quizzes and solutions)*
 
 *⭐ Note: All SQLZoo tutorial sections will eventually be covered in this repository, even if some are currently in progress.*
-
----
-
-## 📂 Folder Structure
-```
-SQL_Zoo_solutions/
-│
-├── 0_SELECT_basics.sql               # Solutions and reflections for SELECT basics
-├── 1_SELECT_name.sql                 # Solutions and reflections for SELECT name
-├── 2_SELECT_from_World.sql           # Solutions and reflections for SELECT from World
-├── 3_SELECT_from_Nobel.sql           # Solutions and reflections for SELECT from Nobel
-├── 4_SELECT_within_SELECT.sql        # Solutions and reflections for SELECT within SELECT
-├── 5_SUM_and_COUNT.sql               # Solutions and reflections for SUM and COUNT
-├── 6_JOIN.sql                        # Solutions and reflections for JOIN
-├── 7_MORE_JOIN_operations.sql        # Solutions and reflections for More JOIN operations
-├── 8_USING_NULL.sql                  # Solutions and reflections for Using Null
-├── 8+_NUMERIC_EXAMPLES.sql           # Solutions and reflections for Numeric Examples
-├── 9_WINDOW_FUNCTION.sql             # Solutions and reflections for Window Function
-├── 9+_COVID19.sql                    # Solutions and reflections for COVID 19
-├── 9_SELF_JOIN.sql                   # Solutions and reflections for Self Join
-├── 10_TUTORIAL_QUIZZES.sql           # Solutions and reflections for all Tutorial Quizzes
-│
-├── LICENSE                           # MIT License
-└── README.md                         # This file
-```
 
 ---
 
