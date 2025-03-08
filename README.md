@@ -28,8 +28,6 @@ All solutions are 💯 correct at the time of upload and include explanations to
 - 9+ COVID 19
 - 9 Self Join
 - 10 **Tutorial Quizzes** *(Multiple-choice quizzes and solutions)*
-- 11 Tutorial Student Records
-- 12 Tutorial DDL
 
 *⭐ Note: All SQLZoo tutorial sections will eventually be covered in this repository, even if some are currently in progress.*
 
@@ -53,8 +51,6 @@ SQL_Zoo_solutions/
 ├── 9+_COVID19.sql                    # Solutions and reflections for COVID 19
 ├── 9_SELF_JOIN.sql                   # Solutions and reflections for Self Join
 ├── 10_TUTORIAL_QUIZZES.sql           # Solutions and reflections for all Tutorial Quizzes
-├── 11_TUTORIAL_STUDENT_RECORDS.sql   # Solutions and reflections for Tutorial Student Records
-├── 12_TUTORIAL_DDL.sql               # Solutions and reflections for Tutorial DDL
 │
 ├── LICENSE                           # MIT License
 └── README.md                         # This file
