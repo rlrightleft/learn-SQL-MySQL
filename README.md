@@ -50,7 +50,7 @@ Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
 
 ---
 
-## 🙌 Contributions
+## Contributions
 Feel free to fork this repo and add your own solutions or reflections! Pull requests are welcome.
 
 ---
