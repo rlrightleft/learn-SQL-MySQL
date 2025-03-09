@@ -6,7 +6,7 @@ Solutions for SQLZoo "Tutorial Quizzes" section
 
 -- Quiz: 1. SELECT Quiz
 
--- Question 1: Select the code which produces this table
+-- Question 1.1: Select the code which produces this table
 -- name          | population
 -- --------------|-----------
 -- Bahrain       | 1234571
@@ -21,7 +21,7 @@ WHERE population BETWEEN 1000000 AND 1250000;
 BETWEEN is inclusive, so it captures countries with populations between 1,000,000 and 1,250,000.
 */
   
--- Question 2: Pick the result you would obtain from this code:
+-- Question 1.2: Pick the result you would obtain from this code:
     SELECT name, population
     FROM world
     WHERE name LIKE "Al%";    
@@ -33,7 +33,7 @@ BETWEEN is inclusive, so it captures countries with populations between 1,000,00
 The **LIKE** operator with 'Al%' selects names starting with 'Al'. The % wildcard matches any sequence of characters.
 */
 
--- Question 3: Select the code which shows the countries that end in A or L
+-- Question 1.3: Select the code which shows the countries that end in A or L
 SELECT name 
 FROM world
 WHERE name LIKE '%a' 
@@ -44,7 +44,7 @@ WHERE name LIKE '%a'
 The **OR** operator combines both conditions.
 */
   
--- Question 4: Pick the result from the query
+-- Question 1.4: Pick the result from the query
     SELECT name,length(name)
     FROM world
     WHERE length(name)=5 and region='Europe';
@@ -60,7 +60,7 @@ LENGTH(name) counts the number of characters in the country name.
 Using AND ensures the region filter is applied alongside the name length condition.
 */
   
--- Question 5: Here are the first few rows of the world table:
+-- Question 1.5: Here are the first few rows of the world table:
 -- name        | region      | area  | population | gdp
 -- ----------- | ----------- | ----- | ---------- | ------------
 -- Afghanistan | South Asia  | 652225 | 26000000   | 
@@ -76,7 +76,7 @@ Using AND ensures the region filter is applied alongside the name length conditi
 **Simple arithmetic operations** such as multiplication (*) and division (/) can be used in SELECT statements.
 */
   
--- Question 6: Select the code that would show the countries with an area larger than 50000 and a population smaller than 10000000
+-- Question 1.6: Select the code that would show the countries with an area larger than 50000 and a population smaller than 10000000
 SELECT name, area, population
 FROM world
 WHERE area > 50000 
@@ -86,7 +86,7 @@ WHERE area > 50000
 The AND operator ensures that both conditions are met — countries with a large area but a smaller population.
 */
   
--- Question 7: Select the code that shows the population density of China, Australia, Nigeria and France
+-- Question 1.7: Select the code that shows the population density of China, Australia, Nigeria and France
 SELECT name, population/area
   FROM world
  WHERE name IN ('China', 'Nigeria', 'France', 'Australia');
