@@ -13,7 +13,7 @@ All solutions are 💯 correct at the time of upload and include explanations to
 
 ---
 
-## 🚀 Topics Covered
+## SQLZoo Topics Covered
 - 0 SELECT basics
 - 1 SELECT name
 - 2 SELECT from World
