@@ -28,10 +28,19 @@ SELECT teacher.name, dept.name
 FROM teacher
   LEFT JOIN dept ON (teacher.dept = dept.ID);
 
+/* Reflection:
+An **INNER JOIN** excludes teachers who have no department.
+Using **LEFT JOIN** ensures that all teachers are listed, even if they have no department (NULL values in dept.name).
+*/
+
 -- Problem 4: Use a different JOIN so that all departments are listed.
 SELECT teacher.name, dept.name
 FROM teacher
   RIGHT JOIN dept ON (teacher.dept = dept.id);
+
+/* Reflection:
+A **RIGHT JOIN** ensures that all departments are listed, even if they have no teachers (NULL values in teacher.name).
+*/
 
 -- Problem 5: Use COALESCE to print the mobile number. Use the number '07986 444 2266' if there is no number given. Show teacher name and mobile number or '07986 444 2266'
 SELECT 
@@ -72,7 +81,7 @@ GROUP BY dept.name;
 SELECT
   teacher.name,
   CASE
-    WHEN dept IN ('1', '2') THEN 'Sci'
+    WHEN dept IN (1, 2) THEN 'Sci'
     ELSE 'Art' 
   END AS 'Sci or Art'
 FROM teacher;
@@ -90,9 +99,8 @@ If there no conditions match (and there is not ELSE) then NULL is returned.
 SELECT
   teacher.name,
   CASE
-    WHEN dept IN ('1', '2') THEN 'Sci'
-    WHEN dept = '3' THEN 'Art'
+    WHEN dept IN (1, 2) THEN 'Sci'
+    WHEN dept = 3 THEN 'Art'
     ELSE 'None'
   END AS 'Sci, Art, or None'
 FROM teacher;
-
