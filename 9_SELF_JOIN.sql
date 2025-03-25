@@ -77,8 +77,7 @@ SELECT
   bus2.num,           -- Second bus number 
   bus2.company       
 FROM (
-  -- Subquery bus1: Get all (bus number, company) pairs that go from Craiglockhart
-  -- to some other stop (the transfer stop)
+  -- Subquery bus1: Get all (bus number, company) pairs that go from Craiglockhart to some other stop (the transfer stop).
   SELECT start1.num, start1.company, stop1.stop
   FROM route AS start1
     JOIN route AS stop1
@@ -88,8 +87,7 @@ FROM (
   WHERE start1.stop = (SELECT id FROM stops WHERE name = 'Craiglockhart')
 ) AS bus1
 JOIN (
-  -- Subquery bus2: Get all (bus number, company) pairs that go from a stop
-  -- (the same transfer stop) to Lochend
+  -- Subquery bus2: Get all (bus number, company) pairs that go from a stop (the same transfer stop) to Lochend.
   SELECT start2.num, start2.company, start2.stop
   FROM route AS start2
     JOIN route AS stop2
