@@ -68,4 +68,39 @@ FROM route a
 WHERE stopa.name = 'Craiglockhart'
 AND (b.pos >= a.pos OR a.pos >= b.pos)
 
--- Problem 10: 
+-- Problem 10: Find the routes involving two buses that can go from Craiglockhart to Lochend. Show the bus no. and company for the first bus, the name of the stop for the transfer, and the bus no. and company for the second bus.
+-- Hint: Self-join twice to find buses that visit Craiglockhart and Lochend, then join those on matching stops.
+SELECT 
+  bus1.num,           -- First bus number
+  bus1.company,      
+  stops.name,         -- Transfer stop name
+  bus2.num,           -- Second bus number 
+  bus2.company       
+FROM (
+  -- Subquery bus1: Get all (bus number, company) pairs that go from Craiglockhart
+  -- to some other stop (the transfer stop)
+  SELECT start1.num, start1.company, stop1.stop
+  FROM route AS start1
+    JOIN route AS stop1
+      ON start1.num = stop1.num
+      AND start1.company = stop1.company
+      AND start1.stop != stop1.stop
+  WHERE start1.stop = (SELECT id FROM stops WHERE name = 'Craiglockhart')
+) AS bus1
+JOIN (
+  -- Subquery bus2: Get all (bus number, company) pairs that go from a stop
+  -- (the same transfer stop) to Lochend
+  SELECT start2.num, start2.company, start2.stop
+  FROM route AS start2
+    JOIN route AS stop2
+      ON start2.num = stop2.num
+      AND start2.company = stop2.company
+      AND start2.stop != stop2.stop
+  WHERE stop2.stop = (SELECT id FROM stops WHERE name = 'Lochend')
+) AS bus2
+  ON bus1.stop = bus2.stop -- Transfer must happen at the same stop
+JOIN stops 
+  ON bus1.stop = stops.id -- Get the transfer stop name
+ORDER BY 
+  bus1.num, bus1.company, stops.name, bus2.num, bus2.company;
+
