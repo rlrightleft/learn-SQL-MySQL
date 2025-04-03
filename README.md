@@ -1,4 +1,4 @@
-# Learn SQL
+# Learn SQL (MySQL)
 
 *My solutions to SQL exercies from [SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) and [HackerRank](https://www.hackerrank.com/domains/sql) (MySQL dialect).*
 
@@ -7,28 +7,34 @@
 ## About This Repo
 **SQL Dialect:** MySQL
 
-My solutions to **SQLZoo and HackerRank SQL exercises**, designed as a hands-on learning resource to practice SQL concepts.
+This is a personal learning archive where I document solutions and reflections from **SQL platforms like SQLZoo and HackerRank**.  
+Each file contains the original SQL exercise (paraphrased if required), my solutions, and comments explaining the logic and key takeaways.
 
 All solutions are 💯 correct at the time of upload and include explanations to reinforce key SQL topics like queries, joins, subqueries, and more.
 
 ---
 
 ## SQL Topics Covered
-- SELECT, WHERE
-- GROUP BY, HAVING, ORDER BY
-- JOINs (INNER, LEFT, RIGHT, FULL OUTER)
-- Subqueries & CTEs
-- Window Functions (RANK, DENSE_RANK, NTILE, etc.)
-- NULL handling, CASE statements, and more
+- `SELECT`, `WHERE`, `ORDER BY`
+- `GROUP BY`, `HAVING`, aggregate functions
+- `JOIN`s (INNER, LEFT, RIGHT, FULL OUTER)
+- Subqueries and CTEs
+- Window Functions (`RANK`, `DENSE_RANK`, `NTILE`, etc.)
+- `CASE` statements, handling `NULL`, filtering, and more
 
+---
 
-*⭐ Note: I do not claim ownership of the original SQL exercise/challenge/quiz designs. 
-          Some sections are currently in progress.*
+## Current Sources
+
+- [`sqlzoo/`](./sqlzoo/) — Solutions to all SQLZoo tutorials and quizzes  
+- [`hackerrank/`](./hackerrank/) — Paraphrased HackerRank challenges + solutions (in progress)  
+- *(More sources may be added soon — e.g., LeetCode, StrataScratch, custom datasets)*
 
 ---
 
 ## Why SQLZoo?
-[SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) is a hands-on platform for practicing SQL in bite-sized lessons. I chose SQLZoo because of its progressive difficulty and the variety of real-world examples it offers.
+[SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial) is a hands-on, beginner-friendly platform that lets you build up your SQL skills from the ground up using real data patterns.  
+I started with SQLZoo because of its structured progression and engaging challenges.
 
 Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
 
@@ -39,8 +45,17 @@ Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
    ```bash
    git clone https://github.com/rlrightleft/learn-SQL-MySQL.git
    ```
-2. Explore SQL files by topic, including both **tutorial exercises** and **quiz solutions** (located in **File 10: Tutorial Quizzes**).
-3. Review comments and reflections within each `.sql` file. Reflections are included as comments right after each solution to explain my thought process and key takeaways.
+   
+2. Navigate to the folder of interest (`sqlzoo/`, `hackerrank/`, etc.)
+
+3. Open individual `.sql` files to explore solutions, review logic, and see inline reflections.  
+   Reflections are included as SQL comments (`--`,`/* */`) to explain my approach and learning insights for each challenge.
+
+---
+
+## Disclaimer
+I do **not** claim ownership of the original problem statements from SQLZoo, HackerRank, or any other third-party source.  
+This repository is shared for **educational and personal learning purposes only**, with all proprietary content paraphrased where required.
 
 ---
 
@@ -50,7 +65,7 @@ Feel free to fork this repo and add your own solutions or reflections! Pull requ
 ---
 
 ## Feedback?
-If you notice any errors or have suggestions, feel free to open an issue.
+Have a suggestion or found a bug? Open an issue or message me on GitHub.
 
 ---
 
