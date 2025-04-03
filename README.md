@@ -59,12 +59,9 @@ This repository is shared for **educational and personal learning purposes only*
 
 ---
 
-## Contributions
+## Contributions & Feedback?
 Feel free to fork this repo and add your own solutions or reflections! Pull requests are welcome.
 
----
-
-## Feedback?
 Have a suggestion or found a bug? Open an issue or message me on GitHub.
 
 ---
