@@ -1,6 +1,6 @@
 # Learn SQL (MySQL)
 
-*My solutions to SQL exercies from [SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) and [HackerRank](https://www.hackerrank.com/domains/sql) (MySQL dialect).*
+*My solutions to SQL exercises from [SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) and [HackerRank](https://www.hackerrank.com/domains/sql) (MySQL dialect).*
 
 ---
 
@@ -33,7 +33,8 @@ All solutions are 💯 correct at the time of upload and include explanations to
 ---
 
 ## Why SQLZoo?
-[SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial) is a hands-on, beginner-friendly platform that lets you learn SQL from the ground up using real data patterns.  
+[SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial) is a hands-on, beginner-friendly platform that helps you learn SQL from the ground up using real-world examples.  
+
 I started with SQLZoo because of its structured progression and engaging challenges.
 
 Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
@@ -55,7 +56,6 @@ Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
 
 ## Disclaimer
 I do **not** claim ownership of the original problem statements from SQLZoo, HackerRank, or any other third-party source.  
-
 This repository is shared for **educational and personal learning purposes only**, with all proprietary content paraphrased where required.
 
 ---
