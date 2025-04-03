@@ -28,7 +28,7 @@ All solutions are 💯 correct at the time of upload and include explanations to
 
 - [`sqlzoo/`](./sqlzoo/) — Solutions to all SQLZoo tutorials and quizzes  
 - [`hackerrank/`](./hackerrank/) — Paraphrased HackerRank challenges + solutions (in progress)  
-- *(More sources may be added soon — e.g., LeetCode, StrataScratch, custom datasets)*
+- *More sources may be added soon — e.g., LeetCode, StrataScratch, custom datasets*
 
 ---
 
