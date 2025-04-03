@@ -1,4 +1,4 @@
-# SQL Exercise Solutions (MySQL)
+# Learn SQL (MySQL)
 
 *My solutions to SQL exercies from [SQLZoo](https://www.sqlzoo.net/wiki/SQL_Tutorial) and [HackerRank](https://www.hackerrank.com/domains/sql) (MySQL dialect).*
 
