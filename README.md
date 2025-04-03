@@ -14,7 +14,8 @@ All solutions are 💯 correct at the time of upload and include explanations to
 ---
 
 ## SQL Topics Covered
-- SELECT, WHERE, GROUP BY, HAVING, ORDER BY
+- SELECT, WHERE
+- GROUP BY, HAVING, ORDER BY
 - JOINs (INNER, LEFT, RIGHT, FULL OUTER)
 - Subqueries & CTEs
 - Window Functions (RANK, DENSE_RANK, NTILE, etc.)
@@ -36,7 +37,7 @@ Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
 ## How to Use This Repo
 1. Clone the repo:  
    ```bash
-   git clone https://github.com/rlrightleft/SQL_Zoo_solutions.git
+   git clone https://github.com/rlrightleft/learn-SQL-MySQL.git
    ```
 2. Explore SQL files by topic, including both **tutorial exercises** and **quiz solutions** (located in **File 10: Tutorial Quizzes**).
 3. Review comments and reflections within each `.sql` file. Reflections are included as comments right after each solution to explain my thought process and key takeaways.
@@ -53,4 +54,4 @@ If you notice any errors or have suggestions, feel free to open an issue.
 
 ---
 
-Happy querying! 🚀😄
+Happy querying! 😄
