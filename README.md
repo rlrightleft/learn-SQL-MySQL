@@ -33,7 +33,7 @@ All solutions are 💯 correct at the time of upload and include explanations to
 ---
 
 ## Why SQLZoo?
-[SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial) is a hands-on, beginner-friendly platform that lets you build up your SQL skills from the ground up using real data patterns.  
+[SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial) is a hands-on, beginner-friendly platform that lets you learn SQL from the ground up using real data patterns.  
 I started with SQLZoo because of its structured progression and engaging challenges.
 
 Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
