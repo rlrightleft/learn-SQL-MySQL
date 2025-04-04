@@ -1,7 +1,7 @@
 /*
 2_SELECT_from_World.sql
 MySQL syntax
-Solutions for SQLZoo "SELECT from World" section
+Solutions for SQLZoo "SELECT from World" section 
 */
 
 -- Problem 1: Read the notes about this table (world). Observe the result of running this SQL command to show the name, continent, and population of all countries.
