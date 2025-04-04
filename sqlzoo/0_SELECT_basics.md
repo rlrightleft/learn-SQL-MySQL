@@ -1,6 +1,6 @@
 # SQLZoo Solutions: SELECT Basics
 
-This document contains my solutions for the SQLZoo ['SELECT Basics' section](https://sqlzoo.net/wiki/SELECT_basics) using MySQL syntax, along with personal learning notes and reflections.
+This document contains my solutions for the SQLZoo ['SELECT Basics' section](https://sqlzoo.net/wiki/SELECT_basics) using MySQL syntax, along with my personal learning notes and explanations.
 
 ---
 
@@ -16,8 +16,8 @@ FROM world
 WHERE name = 'Germany';
 ```
 
-**Reflection:**  
-Strings should be in **single quotes** to distinguish them from SQL keywords or column names.
+**My Notes:**  
+Strings should be in `single quotes` to distinguish them from SQL keywords or column names.
 
 ---
 
@@ -34,9 +34,9 @@ FROM world
 WHERE name IN ('Sweden', 'Norway', 'Denmark');
 ```
 
-**Reflection:**  
-Use **IN** for a list — great for matching multiple values in a `WHERE` clause.  
-Separate items using a comma (,).
+**My Notes:**  
+Use `IN` for a list — great for matching multiple values in a `WHERE` clause.  
+Separate items using a comma `,`.
 
 ---
 
@@ -54,7 +54,7 @@ FROM world
 WHERE area BETWEEN 200000 AND 250000;
 ```
 
-**Reflection:**  
-Use **BETWEEN ... AND** for an **inclusive** range — includes both boundary values.
+**My Notes:**  
+Use `BETWEEN ... AND` for an `inclusive` range — includes both boundary values.
 
 ---
