@@ -196,6 +196,8 @@ GROUP BY mdate, matchid, team1, team2;
 
 # Old JOIN Tutorial: Table Tennis Olympics
 
+Here are my solutions and notes for a related SQLZoo section, the ['Old JOIN Tutorial'](https://sqlzoo.net/wiki/Old_JOIN_Tutorial).
+
 ---
 
 ## Problem 1
@@ -238,7 +240,7 @@ AND color = 'gold';
 
 ---
 
-# Women's Singles Table Tennis Olympics
+## Women's Singles Table Tennis Olympics
 
 ---
 
@@ -281,7 +283,7 @@ WHERE color = 'gold';
 
 ---
 
-# Table Tennis Men's Doubles
+## Table Tennis Men's Doubles
 
 ---
 
