@@ -220,6 +220,6 @@ ORDER BY subject IN ('physics','chemistry'),
 ```
 
 **My Notes:**  
-Sorting trick: subjects in (`'physics'`, `'chemistry'`) are treated as boolean values (0 or 1).
+Sorting trick: subjects in (`'physics'`, `'chemistry'`) are treated as boolean values (`0` or `1`).
 
 ---
