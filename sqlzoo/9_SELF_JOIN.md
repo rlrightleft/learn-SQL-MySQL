@@ -5,7 +5,7 @@ This document contains my solutions to the SQLZoo ['Self JOIN' section](https://
 ---
 
 ## Problem 1
-How many stops are in the database?
+How many stops are in the database.  
 
 **My Solution:**
 
@@ -17,7 +17,7 @@ FROM stops;
 ---
 
 ## Problem 2
-Find the ID for the stop 'Craiglockhart'.
+Find the id value for the stop 'Craiglockhart'.    
 
 **My Solution:**
 
@@ -30,7 +30,7 @@ WHERE name = 'Craiglockhart';
 ---
 
 ## Problem 3
-Give the id and the name for the stops on the '4' 'LRT' service.
+Give the id and the name for the stops on the '4' 'LRT' service.  
 
 **My Solution:**
 
@@ -45,7 +45,7 @@ WHERE route.num = '4'
 ---
 
 ## Problem 4
-Show services that link London Road (149) and Craiglockhart (53).
+The query shown gives the number of routes that visit either London Road (149) or Craiglockhart (53). Run the query and notice the two services that link these stops have a count of 2. Add a HAVING clause to restrict the output to these two routes.  
 
 **My Solution:**
 
@@ -60,7 +60,7 @@ HAVING COUNT(*) = 2;
 ---
 
 ## Problem 5
-Show services from Craiglockhart to London Road.
+Execute the self join shown and observe that b.stop gives all the places you can get to from Craiglockhart, without changing routes. Change the query so that it shows the services from Craiglockhart to London Road.  
 
 **My Solution:**
 
@@ -75,7 +75,7 @@ WHERE a.stop = 53
 ---
 
 ## Problem 6
-Show services between 'Craiglockhart' and 'London Road'.
+The query shown is similar to the previous one, however by joining two copies of the stops table we can refer to stops by name rather than by number. Change the query so that the services between 'Craiglockhart' and 'London Road' are shown. If you are tired of these places try 'Fairmilehead' against 'Tollcross'.  
 
 **My Solution:**
 
@@ -92,7 +92,7 @@ WHERE stopa.name = 'Craiglockhart'
 ---
 
 ## Problem 7
-List services which connect stops 115 ('Haymarket') and 137 ('Leith').
+Give a list of all the services which connect stops 115 and 137 ('Haymarket' and 'Leith').  
 
 **My Solution:**
 
@@ -107,7 +107,7 @@ WHERE a.stop = 115
 ---
 
 ## Problem 8
-List services that connect 'Craiglockhart' and 'Tollcross'.
+Give a list of the services which connect the stops 'Craiglockhart' and 'Tollcross'.  
 
 **My Solution:**
 
@@ -124,7 +124,7 @@ WHERE stopa.name = 'Craiglockhart'
 ---
 
 ## Problem 9
-List stops reachable from 'Craiglockhart' by taking one bus, including the stop itself.
+Give a distinct list of the stops which may be reached from 'Craiglockhart' by taking one bus, including 'Craiglockhart' itself, offered by the LRT company. Include the company and bus no. of the relevant services.  
 
 **My Solution:**
 
@@ -141,7 +141,8 @@ WHERE stopa.name = 'Craiglockhart'
 ---
 
 ## Problem 10
-Find routes involving two buses from 'Craiglockhart' to 'Lochend'.
+Find the routes involving two buses that can go from Craiglockhart to Lochend.  
+Show the bus no. and company for the first bus, the name of the stop for the transfer, and the bus no. and company for the second bus.  
 
 **My Solution:**
 
@@ -175,7 +176,7 @@ ORDER BY bus1.num, bus1.company, stops.name, bus2.num, bus2.company;
 
 **My Notes:**  
 - Use two subqueries for bus routes from Craiglockhart to a transfer stop, and from transfer to Lochend.
-- Join on matching transfer stop IDs.
+- `JOIN` on matching transfer stop IDs.
 
 ---
 
