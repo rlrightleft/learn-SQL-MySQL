@@ -8,8 +8,8 @@
 **SQL Dialect:** MySQL
 
 This is a personal learning archive where I document solutions and reflections from **SQL platforms like SQLZoo and HackerRank**.  
-
 Each file contains the original SQL exercise (paraphrased if required), my solutions, and comments explaining the logic and key takeaways.
+
 All solutions are 💯 correct at the time of upload and include explanations to reinforce key SQL topics like queries, joins, subqueries, and more.
 
 ---
