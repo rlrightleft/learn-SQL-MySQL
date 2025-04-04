@@ -1,7 +1,7 @@
 /*
 4_SELECT_within_SELECT.sql
 MySQL syntax
-Solutions for SQLZoo "SELECT within SELECT" section
+Solutions for SQLZoo "SELECT within SELECT" section 
 */
 
 -- Problem 1: List each country name where the population is larger than that of 'Russia'.
