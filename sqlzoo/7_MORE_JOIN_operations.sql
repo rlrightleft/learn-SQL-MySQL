@@ -1,7 +1,7 @@
 /*
 7_MORE_JOIN_operations.sql
 MySQL syntax
-Solutions for SQLZoo "More JOIN operations" section
+Solutions for SQLZoo "More JOIN operations" section 
 */
 
 -- Problem 1: List the films where the yr is 1962 [Show id, title]
