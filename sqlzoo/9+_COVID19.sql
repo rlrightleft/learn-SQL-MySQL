@@ -1,7 +1,7 @@
 /*
 9+_COVID19.sql
 MySQL syntax
-Solutions for SQLZoo "Window LAG" section
+Solutions for SQLZoo "Window LAG" section 
 */
 
 -- Problem 1: The example uses a WHERE clause to show the cases in 'Italy' in March 2020.
