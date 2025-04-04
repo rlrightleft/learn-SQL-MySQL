@@ -1,4 +1,5 @@
-# SQLZoo Solutions: SELECT Basics
+# SQLZoo Solutions: 
+# SELECT Basics
 
 This document contains my solutions to the SQLZoo ['SELECT Basics' section](https://sqlzoo.net/wiki/SELECT_basics) using MySQL syntax, along with my personal learning notes and explanations.
 
