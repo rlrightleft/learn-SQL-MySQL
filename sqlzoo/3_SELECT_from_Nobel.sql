@@ -1,7 +1,7 @@
 /*
 3_SELECT_from_Nobel.sql
 MySQL syntax
-Solutions for SQLZoo "SELECT from Nobel" section
+Solutions for SQLZoo "SELECT from Nobel" section 
 */
 
 -- Problem 1: Change the query shown so that it displays Nobel prizes for 1950.
