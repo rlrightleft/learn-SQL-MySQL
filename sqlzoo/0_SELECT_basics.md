@@ -18,7 +18,7 @@ WHERE name = 'Germany';
 ```
 
 **My Notes:**  
-Strings should be in `single quotes` to distinguish them from SQL keywords or column names.
+Strings should be in `'single quotes'` to distinguish them from SQL keywords or column names.
 
 ---
 
