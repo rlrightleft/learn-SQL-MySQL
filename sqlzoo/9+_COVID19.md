@@ -5,7 +5,8 @@ This document contains my solutions to the SQLZoo ['Window LAG' (COVID-19 Data) 
 ---
 
 ## Problem 1
-Modify the query to show data from Spain (instead of Italy).
+The example uses a WHERE clause to show the cases in 'Italy' in March 2020.  
+Modify the query to show data from Spain.
 
 **My Solution:**
 
