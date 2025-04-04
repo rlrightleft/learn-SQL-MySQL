@@ -276,7 +276,7 @@ AND movieid IN
 ```
 
 **My Notes:**  
-Use subqueries to find all movie IDs featuring Art Garfunkel, then list all other actors in those movies.  
+Use *subqueries* to find all movie IDs featuring Art Garfunkel, then list all other actors in those movies.  
 Exclude Art Garfunkel using `actor.name <> 'Art Garfunkel'`.
 
 ---
