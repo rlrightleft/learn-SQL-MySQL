@@ -201,6 +201,7 @@ SELECT subject, COUNT(subject)
 -- | Peace       |   1   |
 -- | Physics     |   1   |
 
+
 -- Quiz 4: Nested SELECT Quiz
 
 -- Question 4.1:
