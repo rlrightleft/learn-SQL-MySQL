@@ -1,7 +1,7 @@
 /*
 8_USING_NULL.sql
 MySQL syntax
-Solutions for SQLZoo "Using NULL" section
+Solutions for SQLZoo "Using NULL" section 
 */
 
 -- Problem 1: List the teachers who have NULL for their department.
