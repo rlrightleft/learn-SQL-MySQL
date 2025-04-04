@@ -195,11 +195,11 @@ SELECT subject, COUNT(subject)
   WHERE yr ='1960' 
   GROUP BY subject;
 -- Answer 3.7: 
-  -- Chemistry | 1
-  -- Literature	| 1
-  -- Medicine | 2
-  -- Peace | 1
-  -- Physics | 1
+-- | Chemistry   |   1   |
+-- | Literature  |   1   |
+-- | Medicine    |   2   |
+-- | Peace       |   1   |
+-- | Physics     |   1   |
 
 -- Quiz 4: Nested SELECT Quiz
 
