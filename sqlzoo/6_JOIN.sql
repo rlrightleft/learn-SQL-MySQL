@@ -1,7 +1,7 @@
 /*
 6_JOIN.sql
 MySQL syntax
-Solutions for SQLZoo "JOIN" section
+Solutions for SQLZoo "JOIN" section 
 */
 
 -- Problem 1: The first example shows the goal scored by a player with the last name 'Bender'. The * says to list all the columns in the table - a shorter way of saying matchid, teamid, player, gtime. Modify it to show the matchid and player name for all goals scored by Germany. To identify German players, check for: teamid = 'GER'
