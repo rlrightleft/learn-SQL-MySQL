@@ -1,7 +1,7 @@
 /*
 5_SUM_and_COUNT.sql
 MySQL syntax
-Solutions for SQLZoo "SUM and COUNT" section
+Solutions for SQLZoo "SUM and COUNT" section 
 */
 
 -- Problem 1: Show the total population of the world.
