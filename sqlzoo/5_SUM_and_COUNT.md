@@ -131,6 +131,8 @@ The `HAVING` clause filters groups after aggregation.
 
 # Nobel Prize Aggregate Problems
 
+Here are my solutions and notes for a related SQLZoo section, the ['Nobel Prizes: Aggregate functions' tutorial](https://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_SUM_and_COUNT_functions.).
+
 ---
 
 ## Problem 1
