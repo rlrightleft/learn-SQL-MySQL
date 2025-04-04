@@ -1,6 +1,6 @@
 # SQLZoo Solutions: SELECT Name
 
-This document contains my solutions to the SQLZoo ['SELECT Name' section](https://sqlzoo.net/wiki/SELECT_name) using MySQL syntax, along with my personal learning notes and explanations.
+This document contains my solutions to the SQLZoo ['SELECT Names' section](https://sqlzoo.net/wiki/SELECT_names) using MySQL syntax, along with my personal learning notes and explanations.
 
 ---
 
