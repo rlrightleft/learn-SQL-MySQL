@@ -1,12 +1,10 @@
 # SQLZoo Solutions: SELECT Basics
 
-This document contains my solutions for the SQLZoo <'SELECT Basics' section>(https://sqlzoo.net/wiki/SELECT_basics) using MySQL syntax, along with personal learning notes and reflections.
+This document contains my solutions for the SQLZoo ['SELECT Basics' section](https://sqlzoo.net/wiki/SELECT_basics) using MySQL syntax, along with personal learning notes and reflections.
 
 ---
 
 ## Problem 1
-
-**Prompt:**  
 The example uses a `WHERE` clause to show the population of 'France'.  
 Modify it to show the population of Germany.
 
@@ -24,8 +22,6 @@ Strings should be in **single quotes** to distinguish them from SQL keywords or 
 ---
 
 ## Problem 2
-
-**Prompt:**  
 The word `IN` allows us to check if an item is in a list.  
 The example shows the name and population for the countries 'Brazil', 'Russia', 'India' and 'China'.  
 Show the name and the population for 'Sweden', 'Norway' and 'Denmark'.
@@ -45,8 +41,6 @@ Separate items using a comma (,).
 ---
 
 ## Problem 3
-
-**Prompt:**  
 Which countries are not too small and not too big?  
 `BETWEEN` allows range checking (inclusive of boundary values).  
 The example below shows countries with an area of 250,000–300,000 sq. km.  
