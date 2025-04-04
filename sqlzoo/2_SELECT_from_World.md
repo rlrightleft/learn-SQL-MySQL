@@ -157,7 +157,7 @@ WHERE LENGTH(name) = LENGTH(capital);
 ```
 
 **My Notes:**  
-`LENGTH(s)` returns the number of characters in string s.
+`LENGTH(s)` returns the number of characters in string `s`.
 
 ---
 
