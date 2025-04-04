@@ -166,7 +166,7 @@ Calculate infection rates using population data from `world` table.
 For each country that has had at last 1000 new cases in a single day, show the date of the peak number of new cases.  
 
 **My Solution:**  
-_(No solution given in original SQL. Placeholder for future completion.)_
+_(In progress.)_
 
 ---
 
