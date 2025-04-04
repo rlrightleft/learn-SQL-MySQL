@@ -1,7 +1,7 @@
 /*
 9_SELF_JOIN.sql
 MySQL syntax
-Solutions for SQLZoo "Self JOIN" section
+Solutions for SQLZoo "Self JOIN" section 
 */
 
 -- Problem 1: How many stops are in the database.
