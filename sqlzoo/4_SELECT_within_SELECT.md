@@ -20,7 +20,7 @@ WHERE population >
 ```
 
 **My Notes:**  
-Use a subquery (in parentheses) to compare against a specific value retrieved dynamically.
+Use a `subquery` (in parentheses) to compare against a specific value retrieved dynamically.
 
 ---
 
