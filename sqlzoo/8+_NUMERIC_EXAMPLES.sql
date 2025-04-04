@@ -1,7 +1,7 @@
 /*
 8+_NUMERIC_EXAMPLES.sql
 MySQL syntax
-Solutions for SQLZoo "NSS Tutorial" section
+Solutions for SQLZoo "NSS Tutorial" section 
 */
 
 -- Problem 1: The example shows the number who responded for: question 1 at 'Edinburgh Napier University' studying '(8) Computer Science'
