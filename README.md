@@ -48,8 +48,8 @@ Keywords: SQL practice, SQL interview prep, SQLZoo answers, SQL exercises
    
 2. Navigate to the folder of interest (`sqlzoo/`, `hackerrank/`, etc.)
 
-3. Open individual `.sql` files to explore solutions, review logic, and see inline reflections.  
-   Reflections are included as SQL comments (`--`,`/* */`) to explain my approach and learning insights for each challenge.
+3. Open individual `.md` files to explore solutions, review logic, and see inline reflections.  
+   Learning notes are included to explain my approach and learning insights for each challenge.
 
 ---
 
