@@ -174,7 +174,7 @@ WHERE LEFT(name, 1) = LEFT(capital, 1)
 ```
 
 **My Notes:**  
-`LEFT(s, n)` extracts n characters from the start of string s.
+`LEFT(s, n)` extracts n characters from the start of string `s`.
 
 ---
 
