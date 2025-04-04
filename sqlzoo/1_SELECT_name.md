@@ -16,7 +16,8 @@ WHERE name LIKE 'Y%';
 ```
 
 **My Notes:**  
-The `LIKE` operator with 'Y%' matches any country name that starts with Y. Use `%` as a wildcard to match any number of any characters.
+The `LIKE` operator with 'Y%' matches any country name that starts with Y. 
+Use `%` as a wildcard to match any number of any characters.
 
 ---
 
