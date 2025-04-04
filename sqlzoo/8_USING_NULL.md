@@ -17,6 +17,7 @@ WHERE dept IS NULL;
 
 **My Notes:**  
 Use `IS NULL` to filter null values in SQL.  
+In SQL, `NULL` is not the same as a value of `0`.  
 > From Wikipedia:  
 > "A null should not be confused with a value of 0. A null indicates a lack of a value, which is not the same as a zero value.  
 > In SQL, null is a marker, not a value.  
