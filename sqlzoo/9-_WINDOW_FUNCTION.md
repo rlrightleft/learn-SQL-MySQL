@@ -101,7 +101,7 @@ FROM (
   FROM ge
   WHERE yr = 2017
   AND constituency BETWEEN 'S14000021' AND 'S14000026'
-) ranked
+  ) ranked
 WHERE posn = 1;
 ```
 
