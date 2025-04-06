@@ -201,7 +201,7 @@ ORDER BY yr DESC, winner;
 ```
 
 **My Notes:**  
-Sort first by descending year, then alphabetically by winner.
+Sort first by descending year (`ORDER BY yr DESC`), then alphabetically by winner.
 
 ---
 
