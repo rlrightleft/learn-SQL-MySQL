@@ -1,6 +1,6 @@
 # SQLZoo Solutions: SUM and COUNT
 
-This document contains my solutions to the SQLZoo ['SUM and COUNT' section](https://sqlzoo.net/wiki/SUM_and_COUNT) using MySQL syntax, along with my personal learning notes and explanations.
+This document contains my solutions to the SQLZoo ['SUM and COUNT' section](https://sqlzoo.net/wiki/SUM_and_COUNT) and the ['Nobel Prizes: Aggregate functions' tutorial](https://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_SUM_and_COUNT_functions.) using MySQL syntax, along with my personal learning notes and explanations.
 
 ---
 
