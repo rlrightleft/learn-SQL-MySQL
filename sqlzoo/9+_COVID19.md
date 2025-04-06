@@ -30,8 +30,10 @@ Modify the query to show confirmed for the day before.
 
 ```sql
 SELECT 
-  name, DAY(whn), confirmed,
-  LAG(confirmed, 1) OVER (PARTITION BY name ORDER BY whn)
+  name,
+  DAY(whn),
+  confirmed,
+  LAG(confirmed, 1) OVER (PARTITION BY name ORDER BY whn) AS 'day_before'
 FROM covid
 WHERE name = 'Italy'
 AND MONTH(whn) = 3 
