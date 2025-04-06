@@ -5,7 +5,7 @@ This document contains my solutions to the SQLZoo ['More JOIN operations' sectio
 ---
 
 ## Problem 1
-List the films where the year is 1962 (show id, title).
+List the films where the yr is 1962. Show id, title.  
 
 **My Solution:**
 
@@ -18,7 +18,7 @@ WHERE yr = 1962;
 ---
 
 ## Problem 2
-Give the year of 'Citizen Kane'.
+Give year of 'Citizen Kane'.  
 
 **My Solution:**
 
@@ -31,7 +31,7 @@ WHERE title = 'Citizen Kane';
 ---
 
 ## Problem 3
-List all of the Star Trek movies, including id, title, and year. Order results by year.
+List all of the Star Trek movies, include the id, title and yr (all of these movies include the words Star Trek in the title). Order results by year.  
 
 **My Solution:**
 
@@ -45,7 +45,7 @@ ORDER BY yr;
 ---
 
 ## Problem 4
-What id number does the actor 'Glenn Close' have?
+What id number does the actor 'Glenn Close' have?  
 
 **My Solution:**
 
@@ -58,7 +58,7 @@ WHERE name = 'Glenn Close';
 ---
 
 ## Problem 5
-What is the id of the film 'Casablanca'?
+What is the id of the film 'Casablanca'.  
 
 **My Solution:**
 
@@ -71,29 +71,34 @@ WHERE title = 'Casablanca';
 ---
 
 ## Problem 6
-Obtain the cast list for 'Casablanca'.
+Obtain the cast list for 'Casablanca'.  
+what is a cast list?  
+The cast list is the names of the actors who were in the movie.  
+Use `movieid=11768`, (or whatever value you got from the previous question).  
 
 **My Solution:**
 
 ```sql
 SELECT actor.name
-FROM actor JOIN casting ON (actor.id = casting.actorid)
+FROM actor
+  JOIN casting ON (actor.id = casting.actorid)
 WHERE casting.movieid = 11768;
 ```
 
 **My Notes:**  
-`JOIN` retrieves all actors associated with the movie ID 11768 (Casablanca).
+`JOIN` allows us to retrieve all actors associated with the movie ID 11768 (Casablanca).
 
 ---
 
 ## Problem 7
-Obtain the cast list for the film 'Alien'.
+Obtain the cast list for the film 'Alien'.  
 
 **My Solution:**
 
 ```sql
 SELECT actor.name
-FROM actor JOIN casting ON (actor.id = actorid)
+FROM actor
+  JOIN casting ON (actor.id = actorid)
 WHERE movieid =
   (
   SELECT id
@@ -103,36 +108,38 @@ WHERE movieid =
 ```
 
 **My Notes:**  
-Use a subquery to find the movie ID dynamically.
+Use a *subquery* to find the movie ID dynamically.
 
 ---
 
 ## Problem 8
-List the films in which 'Harrison Ford' has appeared.
+List the films in which 'Harrison Ford' has appeared.  
 
 **My Solution:**
 
 ```sql
 SELECT title
-FROM movie JOIN casting ON (movie.id = movieid)
+FROM movie
+  JOIN casting ON (movie.id = movieid)
 WHERE actorid =
-(
-SELECT id
-FROM actor
-WHERE name = 'Harrison Ford'
-);
+  (
+  SELECT id
+  FROM actor
+  WHERE name = 'Harrison Ford'
+  );
 ```
 
 ---
 
 ## Problem 9
-List the films where 'Harrison Ford' has appeared but not in the starring role.
+List the films where 'Harrison Ford' has appeared - but not in the starring role. Note: the ord field of casting gives the position of the actor. If `ord=1` then this actor is in the starring role.  
 
 **My Solution:**
 
 ```sql
 SELECT title
-FROM movie JOIN casting ON (movie.id = movieid)
+FROM movie
+  JOIN casting ON (movie.id = movieid)
 WHERE ord > 1 
 AND actorid =
   (
@@ -148,7 +155,7 @@ Use `ord > 1` to exclude lead roles while still listing supporting roles.
 ---
 
 ## Problem 10
-List the films together with the leading star for all 1962 films.
+List the films together with the leading star for all 1962 films.  
 
 **My Solution:**
 
@@ -167,7 +174,7 @@ You can `JOIN` more than 2 tables.
 ---
 
 ## Problem 11
-Which were the busiest years for 'Rock Hudson'?
+Which were the busiest years for 'Rock Hudson', show the year and the number of movies he made each year for any year in which he made more than 2 movies.  
 
 **My Solution:**
 
@@ -187,15 +194,15 @@ Use `HAVING` to filter years where Rock Hudson acted in more than 2 films.
 ---
 
 ## Problem 12
-List the film title and the leading actor for all of the films 'Julie Andrews' played in.
+List the film title and the leading actor for all of the films 'Julie Andrews' played in.  
 
 **My Solution:**
 
 ```sql
 SELECT DISTINCT movie.title, actor.name
 FROM casting
-JOIN movie ON (movieid = movie.id)
-JOIN actor ON (actorid = actor.id)
+  JOIN movie ON (movieid = movie.id)
+  JOIN actor ON (actorid = actor.id)
 WHERE ord = 1
 AND movie.id IN
   (SELECT movieid 
@@ -212,7 +219,7 @@ AND movie.id IN
 ---
 
 ## Problem 13
-List actors who've had at least 15 starring roles, in alphabetical order.
+Obtain a list, in alphabetical order, of actors who've had at least 15 starring roles.  
 
 **My Solution:**
 
@@ -232,7 +239,7 @@ ORDER BY actor.name;
 ---
 
 ## Problem 14
-List films released in 1978 ordered by the number of actors in the cast, then by title.
+List the films released in the year 1978 ordered by the number of actors in the cast, then by title.  
 
 **My Solution:**
 
@@ -248,12 +255,12 @@ ORDER BY
 ```
 
 **My Notes:**  
-Use `COUNT(actorid)` to measure cast size and sort by `title` in case of ties.
+Use `COUNT(actorid)` to measure cast size, and sort by title in case of ties.
 
 ---
 
 ## Problem 15
-List all the people who have worked with 'Art Garfunkel'.
+List all the people who have worked with 'Art Garfunkel'.  
 
 **My Solution:**
 
