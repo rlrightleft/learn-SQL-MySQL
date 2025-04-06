@@ -39,13 +39,13 @@ SELECT stops.id, stops.name
 FROM stops
   JOIN route ON (stops.id = stop)
 WHERE route.num = '4'
-  AND route.company = 'LRT';
+AND route.company = 'LRT';
 ```
 
 ---
 
 ## Problem 4
-The query shown gives the number of routes that visit either London Road (149) or Craiglockhart (53). Run the query and notice the two services that link these stops have a count of 2. Add a HAVING clause to restrict the output to these two routes.  
+The query shown gives the number of routes that visit either London Road (149) or Craiglockhart (53). Run the query and notice the two services that link these stops have a count of 2. Add a `HAVING` clause to restrict the output to these two routes.  
 
 **My Solution:**
 
@@ -69,7 +69,7 @@ SELECT a.company, a.num, a.stop, b.stop
 FROM route a 
   JOIN route b ON (a.company = b.company AND a.num = b.num)
 WHERE a.stop = 53
-  AND b.stop = 149;
+AND b.stop = 149;
 ```
 
 ---
@@ -86,7 +86,7 @@ FROM route a
   JOIN stops stopa ON (a.stop = stopa.id)
   JOIN stops stopb ON (b.stop = stopb.id)
 WHERE stopa.name = 'Craiglockhart'
-  AND stopb.name = 'London Road';
+AND stopb.name = 'London Road';
 ```
 
 ---
@@ -101,7 +101,7 @@ SELECT DISTINCT a.company, a.num
 FROM route a
   JOIN route b ON (a.num = b.num AND a.company = b.company)
 WHERE a.stop = 115
-  AND b.stop = 137;
+AND b.stop = 137;
 ```
 
 ---
@@ -118,7 +118,7 @@ FROM route a
   JOIN stops stopa ON (a.stop = stopa.id)
   JOIN stops stopb ON (b.stop = stopb.id)
 WHERE stopa.name = 'Craiglockhart'
-  AND stopb.name = 'Tollcross';
+AND stopb.name = 'Tollcross';
 ```
 
 ---
@@ -175,7 +175,7 @@ ORDER BY bus1.num, bus1.company, stops.name, bus2.num, bus2.company;
 ```
 
 **My Notes:**  
-- Use two subqueries for bus routes from Craiglockhart to a transfer stop, and from transfer to Lochend.
+- Use two *subqueries* for bus routes from Craiglockhart to a transfer stop, and from transfer to Lochend.
 - `JOIN` on matching transfer stop IDs.
 
 ---
