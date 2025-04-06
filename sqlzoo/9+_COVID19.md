@@ -5,8 +5,8 @@ This document contains my solutions to the SQLZoo ['Window LAG' (COVID-19 Data) 
 ---
 
 ## Problem 1
-The example uses a WHERE clause to show the cases in 'Italy' in March 2020.  
-Modify the query to show data from Spain.
+The example uses a `WHERE` clause to show the cases in 'Italy' in March 2020.  
+Modify the query to show data from Spain.  
 
 **My Solution:**
 
@@ -15,15 +15,15 @@ SELECT
   name, DAY(whn), confirmed, deaths, recovered
 FROM covid
 WHERE name = 'Spain'
-  AND MONTH(whn) = 3 
-  AND YEAR(whn) = 2020
+AND MONTH(whn) = 3 
+AND YEAR(whn) = 2020
 ORDER BY whn;
 ```
 
 ---
 
 ## Problem 2
-The LAG function is used to show data from the preceding row or the table. When lining up rows the data is partitioned by country name and ordered by the data whn. That means that only data from Italy is considered.  
+The `LAG` function is used to show data from the preceding row or the table. When lining up rows the data is partitioned by country name and ordered by the data whn. That means that only data from Italy is considered.  
 Modify the query to show confirmed for the day before.
 
 **My Solution:**
@@ -34,15 +34,15 @@ SELECT
   LAG(confirmed, 1) OVER (PARTITION BY name ORDER BY whn)
 FROM covid
 WHERE name = 'Italy'
-  AND MONTH(whn) = 3 
-  AND YEAR(whn) = 2020
+AND MONTH(whn) = 3 
+AND YEAR(whn) = 2020
 ORDER BY whn;
 ```
 
 ---
 
 ## Problem 3
-The number of confirmed case is cumulative - but we can use LAG to recover the number of new cases reported for each day.  
+The number of confirmed case is cumulative - but we can use `LAG` to recover the number of new cases reported for each day.  
 Show the number of new cases for each day, for Italy, for March.
 
 **My Solution:**
@@ -55,8 +55,8 @@ SELECT
   ) AS new_cases
 FROM covid
 WHERE name = 'Italy'
-  AND MONTH(whn) = 3 
-  AND YEAR(whn) = 2020
+AND MONTH(whn) = 3 
+AND YEAR(whn) = 2020
 ORDER BY whn;
 ```
 
@@ -67,7 +67,7 @@ ORDER BY whn;
 
 ## Problem 4
 The data gathered are necessarily estimates and are inaccurate. However by taking a longer time span we can mitigate some of the effects.  
-You can filter the data to view only Monday's figures WHERE WEEKDAY(whn) = 0.  
+You can filter the data to view only Monday's figures `WHERE WEEKDAY(whn) = 0`.  
 Show the number of new cases in Italy for each week in 2020 - show Monday only.
 
 **My Solution:**
@@ -81,8 +81,8 @@ SELECT
   ) AS new_cases
 FROM covid
 WHERE name = 'Italy'
-  AND WEEKDAY(whn) = 0 
-  AND YEAR(whn) = 2020
+AND WEEKDAY(whn) = 0 
+AND YEAR(whn) = 2020
 ORDER BY whn;
 ```
 
@@ -92,9 +92,9 @@ Filter with `WEEKDAY(whn) = 0` to get Monday's data.
 ---
 
 ## Problem 5
-You can JOIN a table using DATE arithmetic. This will give different results if data is missing.  
+You can `JOIN` a table using `DATE` arithmetic. This will give different results if data is missing.  
 Show the number of new cases in Italy for each week - show Monday only.  
-In the sample query we JOIN this week tw with last week lw using the DATE_ADD function.
+In the sample query we `JOIN` this week tw with last week lw using the `DATE_ADD` function.
 
 **My Solution:**
 
@@ -102,18 +102,18 @@ In the sample query we JOIN this week tw with last week lw using the DATE_ADD fu
 SELECT 
   tw.name, 
   DATE_FORMAT(tw.whn,'%Y-%m-%d') AS date, 
- (tw.confirmed - lw.confirmed) AS new_cases_each_week
+  (tw.confirmed - lw.confirmed) AS new_cases_each_week
 FROM covid tw 
   LEFT JOIN covid lw 
     ON DATE_ADD(lw.whn, INTERVAL 1 WEEK) = tw.whn 
     AND tw.name = lw.name
 WHERE tw.name = 'Italy'
-  AND WEEKDAY(tw.whn) = 0
+AND WEEKDAY(tw.whn) = 0
 ORDER BY tw.whn;
 ```
 
 **My Notes:**  
-Using `JOIN` with `DATE_ADD()` to compare weekly data.
+Use `JOIN` with `DATE_ADD()` to compare weekly data.
 
 ---
 
@@ -140,7 +140,8 @@ ORDER BY confirmed DESC;
 ---
 
 ## Problem 7
-This query includes a JOIN t the world table so we can access the total population of each country and calculate infection rates (in cases per 100,000).  
+This query includes a `JOIN` to the world table so we can access the total population of each country and calculate infection rates (in cases per 100,000). 
+   
 Show the infection rate ranking for each country. Only include countries with a population of at least 10 million.
 
 **My Solution:**
@@ -151,14 +152,14 @@ SELECT
    ROUND(100000 * confirmed / population, 2) rate,
    RANK() OVER (ORDER BY rate) rank
 FROM covid 
-JOIN world ON covid.name = world.name
+  JOIN world ON covid.name = world.name
 WHERE whn = '2020-04-20' 
-  AND population > 10000000
+AND population > 10000000
 ORDER BY population DESC;
 ```
 
 **My Notes:**  
-Calculate infection rates using population data from `world` table.
+Calculate infection rates using population data from the world table (`JOIN`).
 
 ---
 
