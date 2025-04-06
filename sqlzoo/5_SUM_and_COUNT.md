@@ -5,7 +5,8 @@ This document contains my solutions to the SQLZoo ['SUM and COUNT' section](http
 ---
 
 ## Problem 1
-Show the total population of the world.
+Show the total population of the world.  
+`world(name, continent, area, population, gdp)`  
 
 **My Solution:**
 
@@ -20,7 +21,7 @@ FROM world;
 ---
 
 ## Problem 2
-List all the continents - just once each.
+List all the continents - just once each.  
 
 **My Solution:**
 
@@ -35,7 +36,7 @@ FROM world;
 ---
 
 ## Problem 3
-Give the total GDP of Africa.
+Give the total GDP of Africa.  
 
 **My Solution:**
 
@@ -51,7 +52,7 @@ Using `SUM()` with `WHERE` filters the sum to only African countries.
 ---
 
 ## Problem 4
-How many countries have an area of at least 1,000,000?
+How many countries have an area of at least 1000000.  
 
 **My Solution:**
 
@@ -67,7 +68,7 @@ WHERE area >= 1000000;
 ---
 
 ## Problem 5
-What is the total population of Estonia, Latvia, and Lithuania?
+What is the total population of `('Estonia', 'Latvia', 'Lithuania')`.
 
 **My Solution:**
 
@@ -80,7 +81,7 @@ WHERE name IN ('Estonia', 'Latvia', 'Lithuania');
 ---
 
 ## Problem 6
-For each continent show the continent and number of countries.
+For each continent show the continent and number of countries.  
 
 **My Solution:**
 
@@ -96,7 +97,7 @@ GROUP BY continent;
 ---
 
 ## Problem 7
-For each continent show the continent and number of countries with populations of at least 10 million.
+For each continent show the continent and number of countries with populations of at least 10 million.  
 
 **My Solution:**
 
@@ -108,12 +109,12 @@ GROUP BY continent;
 ```
 
 **My Notes:**  
-Applying `WHERE` before `GROUP BY` ensures only countries meeting the condition are counted.
+Applying `WHERE` before `GROUP BY` ensures only countries meeting the population condition are counted.
 
 ---
 
 ## Problem 8
-List the continents that have a total population of at least 100 million.
+List the continents that have a total population of at least 100 million.  
 
 **My Solution:**
 
@@ -125,7 +126,7 @@ HAVING SUM(population) >= 100000000;
 ```
 
 **My Notes:**  
-The `HAVING` clause filters groups after aggregation.
+The `HAVING` clause filters groups after `GROUP BY` aggregation.
 
 ---
 
@@ -136,7 +137,7 @@ Here are my solutions and notes for a related SQLZoo section, the ['Nobel Prizes
 ---
 
 ## Problem 1
-Show the total number of prizes awarded.
+Show the total number of prizes awarded.  
 
 **My Solution:**
 
@@ -160,7 +161,8 @@ FROM nobel;
 ---
 
 ## Problem 3
-Show the total number of prizes awarded for Physics.
+Show the total number of prizes awarded for Physics.  
+`nobel(yr, subject, winner)`  
 
 **My Solution:**
 
@@ -173,7 +175,8 @@ WHERE subject = 'Physics';
 ---
 
 ## Problem 4
-For each subject show the subject and the number of prizes.
+For each subject show the subject and the number of prizes.  
+`nobel(yr,subject, winner)`   
 
 **My Solution:**
 
@@ -186,7 +189,8 @@ GROUP BY subject;
 ---
 
 ## Problem 5
-For each subject show the first year that the prize was awarded.
+For each subject show the first year that the prize was awarded.  
+`nobel(yr, subject, winner)`  
 
 **My Solution:**
 
@@ -205,7 +209,8 @@ GROUP BY subject;
 ---
 
 ## Problem 6
-For each subject show the number of prizes awarded in the year 2000.
+For each subject show the number of prizes awarded in the year 2000.  
+`nobel(yr, subject, winner)`  
 
 **My Solution:**
 
@@ -219,7 +224,8 @@ GROUP BY subject;
 ---
 
 ## Problem 7
-Show the number of different winners for each subject.
+Show the number of different winners for each subject. Be aware that Frederick Sanger has won the chemistry prize twice - he should only be counted once.  
+`nobel(yr, subject, winner)`    
 
 **My Solution:**
 
@@ -232,7 +238,8 @@ GROUP BY subject;
 ---
 
 ## Problem 8
-For each subject show how many years have had prizes awarded.
+For each subject show how many years have had prizes awarded.  
+`nobel(yr, subject, winner)`  
 
 **My Solution:**
 
@@ -245,7 +252,8 @@ GROUP BY subject;
 ---
 
 ## Problem 9
-Show the years in which three prizes were given for Physics.
+Show the years in which three prizes were given for Physics.  
+`nobel(yr, subject, winner)`  
 
 **My Solution:**
 
@@ -260,7 +268,8 @@ HAVING COUNT(winner) = 3;
 ---
 
 ## Problem 10
-Show winners who have won more than once.
+Show winners who have won more than once.  
+`nobel(yr, subject, winner)`  
 
 **My Solution:**
 
@@ -274,7 +283,8 @@ HAVING COUNT(winner) > 1;
 ---
 
 ## Problem 11
-Show winners who have won more than one subject.
+Show winners who have won more than one subject.  
+`nobel(yr, subject, winner)`  
 
 **My Solution:**
 
@@ -288,7 +298,8 @@ HAVING COUNT(DISTINCT subject) > 1;
 ---
 
 ## Problem 12
-Show the year and subject where 3 prizes were given (from year 2000 onwards).
+Show the year and subject where 3 prizes were given. Show only years 2000 onwards.  
+`nobel(yr, subject, winner)`  
 
 **My Solution:**
 
