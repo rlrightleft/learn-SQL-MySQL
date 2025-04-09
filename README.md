@@ -16,7 +16,7 @@ All solutions are 💯 correct at the time of upload and include explanations to
 ## SQL Topics Covered
 - `SELECT`, `WHERE`, `ORDER BY`
 - `GROUP BY`, `HAVING`, aggregate functions
-- `JOIN` (INNER, LEFT, RIGHT, FULL OUTER)
+- `JOIN` (`INNER`, `LEFT`, `RIGHT`, `FULL OUTER`)
 - Subqueries and CTEs
 - Window Functions (`RANK`, `DENSE_RANK`, `NTILE`, etc.)
 - `CASE` statements, handling `NULL`, filtering, and more
